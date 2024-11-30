@@ -1,0 +1,38 @@
+@media (max-width: 767px) {
+  .center {
+    padding: 0px 16px;
+  }
+  .header {
+    padding-top: 32px;
+  }
+  .header_input {
+    display: none;
+  }
+  .nav_01 {
+    display: none;
+  }
+  .nav_01-mob {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .Logo_01 {
+    width: 99px;
+    font-size: 18px;
+  }
+  .h1_1 {
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+  }
+  .p_1 {
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .link_1 {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=_mobile.css.map */

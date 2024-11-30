@@ -1,0 +1,168 @@
+@media (max-width: 767px) {
+    /*Шапка*/
+    .center {
+        padding: 0px 16px;
+    }
+    .header {
+       padding-top: 32px;      
+        &_input {
+            display: none;
+        }
+    }
+    .nav_01 {
+        display: none;
+        &-mob {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+    .Logo_01 {
+        width: 99px;
+        font-size: 18px;
+    }
+    .top_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .h1_1 {
+        font-size: 48px;
+        line-height: 59px;
+    }
+    .p_1 {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .link_1 {
+        font-size: 14px;
+    }
+
+
+
+    /*Основная страница. Мебель для ...*/
+    .h2_1 {
+        padding-top: 48px;
+        padding-bottom: 32px;
+        font-size: 24px;
+        line-height: normal;
+    }
+    
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap:16px;
+        &_item {
+            font-size: 28px;
+            line-height: normal;
+            grid-column: 1 / 8;
+            height: 375px;
+            /*Растянуть*/
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            &_big {
+                height: 244px;
+                height: 244px;
+            }
+        }
+    }
+
+    /*Основная страница. Специальное предлжение*/
+    .product-content {
+        grid-column: 1 / 8;
+    }
+
+    .product {
+        width: 343px;
+    }
+
+    .Name_Product {
+        font-size: 18px;
+        line-height: normal;
+    }
+    .p_2 {
+        width: 342.927px;
+    }
+    .product_box-price {
+        font-size: 18px;
+        line-height: normal;
+    }
+    .link_2 {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    /*Подвал*/
+    .podval {
+        padding-bottom: 32px;
+        &_info {
+            padding-top: 32px;
+            gap: 100px;
+        }
+        &_content {
+        justify-content: center;
+        gap:34px;
+        }
+    }
+
+
+
+    /*Каталог*/
+    .bread {
+        padding: 32px 0;
+        gap: 16px;
+    }
+
+
+    /*Корзина*/
+    .recycle {
+        margin-top: 48px;
+    }
+
+    .recycle_content {
+        width: 343px;
+    }
+   
+    .recycle_left-img {
+        display: none;
+    }
+
+    .recycle_info {
+        gap: 8px;
+    }
+
+    .recycle_name-product {
+        font-size: 18px;
+    }
+
+    .recycle_text, .recycle_price {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .recycle_knopka-box{
+        margin-top: 0px;
+    }
+
+    .recycle_knopka {
+        width: 166px;
+        font-size: 12px;
+        &_oform-zakaz {
+            width: 290px;
+            height: 41px;
+            font-size: 16px;
+            color: #000000;
+            align-self: center;
+        }
+    }
+
+    .recycle-form {
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,82 @@
+/*         Каталог         */
+
+.top_catalog {
+    height: 400px;
+    width: 100%;
+    background-image: url(./img/jpg/top_cat.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.h1_1-Catalog {
+    margin-top: 127px;
+}
+
+.bread {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+
+.breadcrumbs__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+
+    &_link {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+        &:hover {
+        color: #000;
+        text-decoration: underline;
+        }
+
+        &:not(:last-child)::after {
+            content: '/';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #000;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+.sorting {
+    display: grid;
+    align-items: center;
+
+    &::before {
+        width: 20px;
+        height: 11px;
+        margin-left: 246px;
+        content: "";
+        display: flex;
+        position: absolute;
+        background-image: url(./img/svg/Poryadok_01.svg);
+        background-size: contain;
+    }
+
+    &__box {
+    width: 288px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 33px 10px 14px;
+    appearance: none;
+    }
+}

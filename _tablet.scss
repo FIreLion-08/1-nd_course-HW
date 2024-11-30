@@ -1,0 +1,30 @@
+@media (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }    
+    .for {
+        &_item {
+            height: 268px;
+        }
+    }
+
+    .product-content {
+        column-gap: 29px;
+        row-gap: 39px;
+    }
+
+    .Logo_02 {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width: 833px) {
+    .center {
+        padding: 0 24px;
+    }
+    .product {
+        width: 343px;
+    }
+}
+

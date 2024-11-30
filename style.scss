@@ -1,0 +1,425 @@
+/*         Основная         */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+
+/*   Основная страцниа  */
+/*Шапка*/
+
+.top {
+    height: 735px;
+    background-image: url(./img/jpg/topback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.header {
+    /*width: 1200px;*/
+    height: 76px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.Logo_01 {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFFFFF;
+    transition: all 1s;
+    &:hover {
+        transform: scale(1.1);
+        color: #000;
+    }
+
+}
+
+.header_input {
+    width: 288px;
+    height: 41px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: transparent;
+    /*transparent - прозрачный*/
+    outline: none;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.header_input::placeholder {
+    color: #FFFFFF;
+}
+
+.nav_01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 32px;
+
+    &-mob {
+        display: none;
+    }
+}
+
+.menu_link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    transition: all 1s;
+    &:hover {
+        transform: scale(1.5);
+        color: #6318b8;
+    }
+}
+
+
+
+.h1_1 {
+    margin: 63px 0px 16px 0px;
+    max-width: 792px;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.p_1 {
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.link_1 {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+
+/* Мебель для ... */
+/*.For-box {
+
+}*/
+
+.for {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    color: #FFFFFF;
+
+    &_item {
+        height: 415px;
+        grid-column: span 4;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 41px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        &_big {
+            grid-column: span 6;
+        }
+        &_1 {
+            background-image: url(./img/jpg/02_01_Rest_01.jpg);
+        }
+        &_2 {
+            background-image: url(./img/jpg/02_02_Work_01.jpg);
+        }
+        &_3 {
+            background-image: url(./img/jpg/02_03_Kitchen_01.jpg);
+        }
+        &_4 {
+            background-image: url(./img/jpg/02_04_Childrens_Room_01.jpg);
+        }
+        &_5 {
+            background-image: url(./img/jpg/02_05_Bathroom_01.jpg);
+        }
+    }
+}
+
+/*Специальные предложения и каталог товаров*/
+.product-box {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-content {
+    display: flex;
+    column-gap: 32px;
+    row-gap: 56px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 378px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px #ccc;
+    }
+}
+
+.product-image {
+    width: 100%;
+}
+
+/*heading*/
+.h2_1 {
+    padding-top: 64px;
+    padding-bottom: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+}
+
+.Name_Product {
+    padding-top: 10px;
+    margin-bottom: 9px;
+    color: #000;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.p_2 {
+    margin-right: 8px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888;
+}
+
+.product_box-price {
+    display: flex;
+    gap: 32px;
+
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+
+.product_price {
+    color: #050505;
+}
+
+.product_price_old {
+    line-height: normal;
+    text-decoration-line: line-through;
+    color: #888888;
+}
+
+.link_2 {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+
+
+/*Подвал*/
+.podval {
+    background: #F7F6F6;
+    color: #000000;
+
+    padding-top: 32px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.Podval_Logo_02 {
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.Logo_02 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #000000;
+
+}
+
+.podval_content {
+    width: 792px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.podval_info {
+    display: flex;
+    gap: 129px;
+
+}
+
+.podval_item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.h4_1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.podval_link {
+    font-size: 14px;
+    color: #888888;
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.1);
+        color: #000;
+    }
+}
+
+.Messeng {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.podval_form {
+    width: 275px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.podval_text {
+    padding-bottom: 4px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000000;
+}
+
+.podval_input-email {
+    height: 46px;
+    padding: 0 25px;
+
+
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+
+    &::placeholder {
+        color: #C4C4C4;
+    }
+}
+
+.podval_knopka {
+    height: 46px;
+
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.05);
+        background-color: rgb(122, 122, 230);
+        box-shadow: 0 0 5px #ccc;
+        color: white;
+    }
+}
+
+
+
+@import 'style_catalog';
+
+@import 'style_recycle';
+
+
+
+@import 'tablet';
+@import 'mobile';
