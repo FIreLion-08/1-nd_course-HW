@@ -72,13 +72,11 @@ a {
   padding-right: 32px;
   box-sizing: border-box;
 }
-
 .header_input::-moz-placeholder {
-  color: #FFFFFF;
+  color: #C4C4C4;
 }
-
 .header_input::placeholder {
-  color: #FFFFFF;
+  color: #C4C4C4;
 }
 
 .nav_01 {
@@ -233,7 +231,7 @@ a {
   margin-bottom: 12px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 17px;
   color: #888;
 }
@@ -378,7 +376,7 @@ a {
   border-radius: 20px;
   font-size: 15px;
   line-height: 18px;
-  color: #000000;
+  color: #b1a5a5;
   transition: all 0.5s;
 }
 .podval_knopka:hover {
@@ -386,6 +384,12 @@ a {
   background-color: rgb(122, 122, 230);
   box-shadow: 0 0 5px #ccc;
   color: white;
+}
+.podval_knopka::-moz-placeholder {
+  color: #C4C4C4;
+}
+.podval_knopka::placeholder {
+  color: #C4C4C4;
 }
 
 /*         Каталог         */
@@ -748,10 +752,10 @@ a {
   border-bottom: 0.5px solid #CACDDB;
 }
 .form_item::-moz-placeholder {
-  color: #000000;
+  color: #C4C4C4;
 }
 .form_item::placeholder {
-  color: #000000;
+  color: #C4C4C4;
 }
 .form_result {
   margin-top: 23px;
